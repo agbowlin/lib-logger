@@ -1,6 +1,6 @@
 {
     "name": "@liquicode/lib-logger",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "An easy logging system implemented for JavaScript and PHP.",
     "license": "MIT",
     "homepage": "http://lib-logger.liquicode.com",
@@ -19,16 +19,19 @@
     "files": [
         "package.json",
         "bower.json",
+        "lib-logger.js",
         "LICENSE",
         "README.md",
-        "js/*",
-        "php/*"
+        "docs/*",
+        "samples/*",
+        "src/*"
     ],
     "ignore": [
         ".*",
         "bower_components",
         "node_modules",
         "build",
+        "samples/logger.log",
         "*.log"
     ],
     "keywords": [
