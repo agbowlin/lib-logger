@@ -1,0 +1,60 @@
+{
+    "name": "@liquicode/lib-logger",
+    "version": "0.1.0",
+    "description": "An easy logging system implemented for JavaScript and PHP.",
+    "license": "MIT",
+    "homepage": "http://lib-logger.liquicode.com",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/agbowlin/lib-logger.git"
+    },
+    "authors": [
+        {
+            "name": "Andre G. Bowlin",
+            "email": "agbowlin@gmail.com",
+            "homepage": "http://liquicode.com"
+        }
+    ],
+    "main": "lib-logger.js",
+    "files": [
+        "package.json",
+        "bower.json",
+        "LICENSE",
+        "README.md",
+        "js/*",
+        "php/*"
+    ],
+    "ignore": [
+        ".*",
+        "bower_components",
+        "node_modules",
+        "build",
+        "*.log"
+    ],
+    "keywords": [
+        "util",
+        "functional",
+        "server",
+        "client",
+        "browser",
+        "nodejs",
+        "log",
+        "logger",
+        "logging"
+    ],
+    "scripts": {
+        "test": "mocha -u bdd tests",
+        "01-docs-build-docker": "bash build/docs/01-docs-build-docker.sh",
+        "02-docs-deploy-docker": "bash build/docs/02-docs-deploy-docker.sh",
+        "01-lib-build-webpack": "bash build/lib/01-lib-build-webpack.sh",
+        "02-lib-publish-npm": "bash build/lib/02-lib-publish-npm.sh"
+    },
+    "devDependencies": {
+        "bower": "^1.7.9",
+        "mocha": "^7.1.2",
+        "webpack": "^4.43.0",
+        "webpack-cli": "^3.3.11",
+        "webpack-node-externals": "^1.7.2"
+    },
+    "dependencies": {}
+}

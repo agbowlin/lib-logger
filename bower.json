@@ -1,0 +1,47 @@
+{
+    "name": "liqui-logger",
+    "version": "0.1.0",
+    "homepage": "http://lib-logger.liquicode.com",
+    "description": "An easy logging system implemented for various platforms.",
+    "authors": [
+        {
+            "name": "Andre G. Bowlin",
+            "email": "agbowlin@gmail.com",
+            "homepage": "http://liquicode.com"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/agbowlin/lib-logger.git"
+    },
+    "license": "MIT",
+    "keywords": [
+        "util",
+        "functional",
+        "server",
+        "client",
+        "browser",
+        "nodejs",
+        "log",
+        "logger",
+        "logging"
+    ],
+    "files": [
+        "package.json",
+        "bower.json",
+        "LICENSE",
+        "README.md",
+        "js/*",
+        "php/*"
+    ],
+    "ignore": [
+        ".*",
+        "bower_components",
+        "node_modules",
+        "build",
+        "*.log"
+    ],
+    "moduleType": [
+        "globals"
+    ]
+}
