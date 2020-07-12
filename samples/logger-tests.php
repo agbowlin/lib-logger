@@ -1,6 +1,6 @@
 <?php
 
-require_once( '../logger.php' );
+require_once( '../src/logger.php' );
 
 $console_log_target = $Logger->AddLogTarget('console');
 $file_log_target = $Logger->AddLogTarget('file');

@@ -5,7 +5,7 @@ const NPM_NODE_EXTERNALS = require( 'webpack-node-externals' );
 
 module.exports =
 {
-	entry: './src/js/logger.js',
+	entry: './src/logger.js',
 	output: {
 		path: __dirname,
 		filename: `./lib-logger.js`,
