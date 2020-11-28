@@ -1,23 +1,23 @@
 {
-    "name": "@liquicode/lib-logger",
-    "version": "0.1.4",
-    "description": "An easy logging system implemented for JavaScript and PHP.",
-    "license": "MIT",
-    "homepage": "http://lib-logger.liquicode.com",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/agbowlin/lib-logger.git"
-    },
-    "authors": [
-        {
-            "name": "Andre G. Bowlin",
-            "email": "agbowlin@gmail.com",
-            "homepage": "http://liquicode.com"
-        }
-    ],
-    "main": "src/lib-logger.js",
-    "files": [
-        "bower.json",
+	"name": "@liquicode/lib-logger",
+	"version": "0.1.5",
+	"description": "An easy logging system implemented for JavaScript and PHP.",
+	"license": "MIT",
+	"homepage": "http://lib-logger.liquicode.com",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/agbowlin/lib-logger.git"
+	},
+	"authors": [
+		{
+			"name": "Andre G. Bowlin",
+			"email": "agbowlin@gmail.com",
+			"homepage": "http://liquicode.com"
+		}
+	],
+	"main": "src/lib-logger.js",
+	"files": [
+		"bower.json",
 		"readme.md",
 		"LICENSE",
 		"VERSION",
@@ -26,40 +26,40 @@
 		"src/*",
 		"tests/*",
 		"samples/*"
-    ],
-    "ignore": [
+	],
+	"ignore": [
 		".*",
 		"~*",
 		"bower_components",
 		"node_modules",
 		"build",
-        "samples/logger.log",
-        "*.log"
-    ],
-    "keywords": [
-        "util",
-        "functional",
-        "server",
-        "client",
-        "browser",
-        "nodejs",
-        "log",
-        "logger",
-        "logging"
-    ],
-    "dependencies": {},
-    "devDependencies": {
-        "bower": "^1.7.9",
-        "mocha": "^7.1.2",
-        "webpack": "^4.43.0",
-        "webpack-cli": "^3.3.11",
-        "webpack-node-externals": "^1.7.2"
-    },
-    "scripts": {
+		"samples/logger.log",
+		"*.log"
+	],
+	"keywords": [
+		"util",
+		"functional",
+		"server",
+		"client",
+		"browser",
+		"nodejs",
+		"log",
+		"logger",
+		"logging"
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"bower": "^1.7.9",
+		"mocha": "^7.1.2",
+		"webpack": "^4.43.0",
+		"webpack-cli": "^3.3.11",
+		"webpack-node-externals": "^1.7.2"
+	},
+	"scripts": {
 		"run-tests": "mocha -u bdd tests/*.js --timeout 0 --slow 10 --colors",
 		"run-docs-web-server": "npx here --directory docs --port 4200 --watch 1 --silent",
 		"010-webpack": "bash build/webpack/010-webpack.sh",
 		"810-s3-sync-docs": "bash build/s3/810-s3-sync-docs.sh",
 		"910-release-version": "node build/custom/910-release-version.js"
-    }
+	}
 }
