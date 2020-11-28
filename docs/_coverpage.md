@@ -2,7 +2,7 @@
 
 ![logo](media/lib-logger.png)
 
-# lib-logger <small>(v0.1.3)</small>
+# lib-logger <small>(v0.1.4)</small>
 
 <hr>
 
