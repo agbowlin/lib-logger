@@ -15,22 +15,24 @@
             "homepage": "http://liquicode.com"
         }
     ],
-    "main": "lib-logger.js",
+    "main": "src/lib-logger.js",
     "files": [
-        "package.json",
         "bower.json",
-        "lib-logger.js",
-        "LICENSE",
-        "README.md",
-        "docs/*",
-        "samples/*",
-        "src/*"
+		"readme.md",
+		"LICENSE",
+		"VERSION",
+		"dist/*",
+		"docs/*",
+		"src/*",
+		"tests/*",
+		"samples/*"
     ],
     "ignore": [
-        ".*",
-        "bower_components",
-        "node_modules",
-        "build",
+		".*",
+		"~*",
+		"bower_components",
+		"node_modules",
+		"build",
         "samples/logger.log",
         "*.log"
     ],
@@ -45,12 +47,7 @@
         "logger",
         "logging"
     ],
-    "scripts": {
-        "test": "mocha -u bdd tests",
-        "01-lib-build-webpack": "bash build/lib/01-lib-build-webpack.sh",
-        "02-lib-publish-npm": "bash build/lib/02-lib-publish-npm.sh",
-        "101-s3-sync": "bash build/s3/101-s3-sync.sh"
-    },
+    "dependencies": {},
     "devDependencies": {
         "bower": "^1.7.9",
         "mocha": "^7.1.2",
@@ -58,5 +55,11 @@
         "webpack-cli": "^3.3.11",
         "webpack-node-externals": "^1.7.2"
     },
-    "dependencies": {}
+    "scripts": {
+		"run-tests": "mocha -u bdd tests/*.js --timeout 0 --slow 10 --colors",
+		"run-docs-web-server": "npx here --directory docs --port 4200 --watch 1 --silent",
+		"010-webpack": "bash build/webpack/010-webpack.sh",
+		"810-s3-sync-docs": "bash build/s3/810-s3-sync-docs.sh",
+		"910-release-version": "node build/custom/910-release-version.js"
+    }
 }

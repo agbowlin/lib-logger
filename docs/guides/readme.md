@@ -1,8 +1,6 @@
-<!-- guides/about.md -->
 
 
-
-lib-logger
+lib-logger (v0.1.3)
 ==========================================
 
 An easy logging system implemented for various platforms.

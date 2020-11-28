@@ -2,21 +2,24 @@
 
 ![logo](media/lib-logger.png)
 
-# lib-logger <small>0.1.0</small>
+# lib-logger <small>(v0.1.3)</small>
+
+<hr>
 
 > An easy logging system implemented for JavaScript and PHP.
+
+<hr>
 
 - Simple and lightweight (~5K)
 - 100% JavaScript - No dependencies
 
 [GitHub](https://github.com/agbowlin/lib-logger/)
-[Get Started](guides/about.md)
+[Get Started](guides/readme.md)
 
 
 <!-- background image -->
-
 <!-- ![]() -->
 
 <!-- background color -->
-
-![color](#cceeff)
+<!-- ![color](#cceeff) -->
+<!-- ![color](#2980B9) -->
