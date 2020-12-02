@@ -1,7 +1,7 @@
 
 //==========================================
 // Load the library
-let libLogger = require( '../src/lib-logger.js' );
+let libLogger = require( '../../src/lib-logger.js' );
 // Create a logger object.
 let Logger = libLogger.Logger( 'Test Group', 'console' );
 // get a reference to the default console log target.

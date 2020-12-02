@@ -24,8 +24,7 @@
 		"dist/*",
 		"docs/*",
 		"src/*",
-		"tests/*",
-		"samples/*"
+		"tests/*"
 	],
 	"ignore": [
 		".*",
@@ -33,7 +32,6 @@
 		"bower_components",
 		"node_modules",
 		"build",
-		"samples/logger.log",
 		"*.log"
 	],
 	"keywords": [
