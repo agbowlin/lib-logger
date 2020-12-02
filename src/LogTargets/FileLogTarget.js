@@ -57,7 +57,7 @@ exports.NewFileLogTarget =
 				// Platform: NodeJS
 				filepath = NPM_PATH.join( Path, Filename );
 				// NPM_FS.appendFileSync( filepath, Text + "\n" );
-				NPM_FS.appendFile( filepath, Text + "\n" );
+				NPM_FS.appendFile( filepath, Text + "\n", () => { } );
 			}
 			else
 			{

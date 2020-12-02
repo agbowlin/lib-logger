@@ -11,6 +11,7 @@ let console_log_target = Logger.Config.targets[ 0 ];
 // Add a file target to store log entries in a file.
 // The default name of the file is logger.log and is stored in the current working directory.
 let file_log_target = Logger.AddLogTarget( 'file' );
+file_log_target.log_filename = 'Logger.0.1.x-sample';
 
 //==========================================
 // Using the log target created above, you can specify the location
