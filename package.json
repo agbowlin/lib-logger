@@ -1,6 +1,6 @@
 {
 	"name": "@liquicode/lib-logger",
-	"version": "0.1.5",
+	"version": "0.2.0",
 	"description": "An easy logging system implemented for JavaScript and PHP.",
 	"license": "MIT",
 	"homepage": "http://lib-logger.liquicode.com",

@@ -1,6 +1,6 @@
 
 
-lib-logger (v0.1.5)
+lib-logger (v0.2.0)
 ==========================================
 
 An easy logging system implemented for various platforms.
