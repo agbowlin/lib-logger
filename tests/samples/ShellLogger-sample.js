@@ -4,7 +4,7 @@
 //==========================================
 
 // Load the library
-let LIB_LOGGER = require( '../../src/lib-logger.js' );
+const LIB_LOGGER = require( '../../src/lib-logger.js' );
 
 // Create a logger object.
 let Logger = LIB_LOGGER.NewLogger( 'Test Group' );
@@ -35,4 +35,4 @@ Logger.AddLogTarget( log_target );
 // Generate some log messages.
 //==========================================
 
-require( './sample-log-messages.js' ).EmitMessages( Logger );
+require( './sample-log-messages.js' ).SampleMessages( Logger );

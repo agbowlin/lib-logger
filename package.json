@@ -1,7 +1,7 @@
 {
 	"name": "@liquicode/lib-logger",
 	"version": "0.2.0",
-	"description": "An easy logging system implemented for JavaScript and PHP.",
+	"description": "An easy and flexible logging system. Log to console, files, etc. Now with colors!",
 	"license": "MIT",
 	"homepage": "http://lib-logger.liquicode.com",
 	"repository": {

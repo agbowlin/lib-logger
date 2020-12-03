@@ -2,8 +2,10 @@
 //==========================================
 // Load the library
 let libLogger = require( '../../src/lib-logger.js' );
+
 // Create a logger object.
 let Logger = libLogger.Logger( 'Test Group', 'console' );
+
 // get a reference to the default console log target.
 let console_log_target = Logger.Config.targets[ 0 ];
 
@@ -33,21 +35,34 @@ if ( false )
 
 Logger.LogInfo( "Detected platform = " + Logger.platform + "." );
 
-Logger.LogTrace( "This is an Trace message." );
-Logger.LogDebug( "This is an Debug message." );
+//==========================================
+Logger.LogSeparatorLine();
+Logger.LogTrace( "This is a Trace message." );
+Logger.LogDebug( "This is a Debug message." );
 Logger.LogInfo( "This is an Info message." );
-Logger.LogWarning( "This is an Warn message." );
+Logger.LogWarning( "This is a Warn message." );
 Logger.LogError( "This is an Error message." );
+Logger.LogFatal( "This is a Fatal message." );
+
+//==========================================
+Logger.LogSeparatorLine();
+Logger.trace( "This is a Trace message." );
+Logger.debug( "This is a Debug message." );
+Logger.info( "This is an Info message." );
+Logger.warn( "This is a Warn message." );
+Logger.error( "This is an Error message." );
+Logger.fatal( "This is a Fatal message." );
 
 //==========================================
 Logger.LogSeparatorLine();
 console_log_target.log_levels = 'IWE';
 
-Logger.LogTrace( "This is an Trace message. SHOULD NOT SEE THIS MESSAGE." );
-Logger.LogDebug( "This is an Debug message. SHOULD NOT SEE THIS MESSAGE." );
+Logger.LogTrace( "This is a Trace message. SHOULD NOT SEE THIS MESSAGE." );
+Logger.LogDebug( "This is a Debug message. SHOULD NOT SEE THIS MESSAGE." );
 Logger.LogInfo( "This is an Info message." );
-Logger.LogWarning( "This is an Warn message." );
+Logger.LogWarning( "This is a Warn message." );
 Logger.LogError( "This is an Error message." );
+Logger.LogFatal( "This is a Fatal message. SHOULD NOT SEE THIS MESSAGE." );
 
 //==========================================
 Logger.LogSeparatorLine();

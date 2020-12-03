@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-![logo](media/lib-logger.png)
+![logo](media/lib-logger-banner.png)
 
 # lib-logger <small>(v0.2.0)</small>
 
@@ -12,6 +12,8 @@
 
 - Simple and lightweight (~5K)
 - 100% JavaScript - No dependencies
+- Shell Colorized Output
+- Log to Files, Output to Console
 
 [GitHub](https://github.com/agbowlin/lib-logger/)
 [Get Started](guides/readme.md)

@@ -1,7 +1,7 @@
 
 
-exports.EmitMessages =
-	function EmitMessages( Logger )
+exports.SampleMessages =
+	function SampleMessages( Logger )
 	{
 		// Get the log target so we can play with it a little.
 		let log_target = Logger.LogTargets[ 0 ];
