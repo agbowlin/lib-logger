@@ -19,7 +19,7 @@
 	"files": [
 		"bower.json",
 		"readme.md",
-		"LICENSE",
+		"license.md",
 		"VERSION",
 		"dist/*",
 		"docs/*",
