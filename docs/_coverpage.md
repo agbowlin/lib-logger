@@ -16,7 +16,7 @@
 - Log to Files, Output to Console
 
 [GitHub](https://github.com/agbowlin/lib-logger/)
-[Get Started](guides/readme.md)
+[Get Started](external/readme.md)
 
 
 <!-- background image -->
