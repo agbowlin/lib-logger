@@ -4,8 +4,8 @@
 
 - lib-logger Docs
 
-	- [About](guides/readme.md)
-	- [Log Message Severity](guides/LogMessageSeverity.md)
+	- [About](external/readme.md)
+	- [Log Severity Levels](guides/LogSeverityLevels.md)
 	- [Logging Techniques](guides/LoggingTechniques.md)
 
 
@@ -15,17 +15,17 @@
 
 	- Loggers
 
-		- [Logger](guides/Logger.md)
-		- [ConsoleLogger](guides/ConsoleLogger.md)
-		- [ShellLogger](guides/ShellLogger.md)
-		- [FileLogger](guides/FileLogger.md)
+		- [Logger](api/Logger.md)
+		- [ConsoleLogger](api/ConsoleLogger.md)
+		- [ShellLogger](api/ShellLogger.md)
+		- [FileLogger](api/FileLogger.md)
 
 	- Log Targets
 
-		- [LogTarget](guides/LogTarget.md)
-		- [ConsoleLogTarget](guides/ConsoleLogTarget.md)
-		- [ShellLogTarget](guides/ShellLogTarget.md)
-		- [FileLogTarget](guides/FileLogTarget.md)
+		- [LogTarget](api/LogTarget.md)
+		- [ConsoleLogTarget](api/ConsoleLogTarget.md)
+		- [ShellLogTarget](api/ShellLogTarget.md)
+		- [FileLogTarget](api/FileLogTarget.md)
 
 	- Other Modules
 
@@ -36,12 +36,13 @@
 
 - Previous Library API
 
-	- [Logger 0.1.x](guides/Logger.0.1.x.md)
+	- [Logger 0.1.x](api/Logger.0.1.x.md)
 
 
 <hr>
 
 - Information
 
-	- [Testing Output](testing-output.md)
+	- [Testing Output](external/testing-output.md)
+	- [Software License](external/license.md)
 

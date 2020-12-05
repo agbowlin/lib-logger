@@ -1,16 +1,16 @@
 
-# LogTarget
+# LogTarget Object
 
 The `LogTarget` object serves as a base class/object for specfic `LogTarget` implementations.
 
-There is a specific `LogTarget` implementation for each supported log device:
+There are specific `LogTarget` implementations for each supported log device:
 
-- [ConsoleLogTarget](ConsoleLogTarget.md)
-- [ShellLogTarget](ShellLogTarget.md)
-- [FileLogTarget](FileLogTarget.md)
+- [ConsoleLogTarget](api/ConsoleLogTarget.md)
+- [ShellLogTarget](api/ShellLogTarget.md)
+- [FileLogTarget](api/FileLogTarget.md)
 
 
-## LogTarget Constructor
+### Constructor
 
 The library function `NewLogTarget` creates a new instance of a `LogTarget` object.
 This function is used internally but can be called if you are supplying your own `LogTarget` implementation.
@@ -20,10 +20,11 @@ const LIB_LOGGER = require( '@liquicode/lib-logger' );
 let log_target = LIB_LOGGER.NewLogTarget();
 ```
 
-## LogTarget Fields
 
-A `LogTarget` stores it configuration information within a `Config` object.
-Specific `LogTarget` implementations will append their configuration information to the `Config` object as well.
+### Configuration
+
+A `LogTarget` stores all its configuration information within a `Config` object.
+Specific `LogTarget` implementations will append their configuration information to the same `Config` object.
 
 ```javascript
 Config =

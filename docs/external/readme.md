@@ -121,7 +121,7 @@ Logger.info( 'Hello, Again!' );
 ---------------------------------------------------------------------
 
 
-## More Information
+## Links to More
 
 - [Source Code](https://github.com/agbowlin/lib-logger)
 - [Documentation](http://lib-logger.liquicode.com)

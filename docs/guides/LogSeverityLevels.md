@@ -1,4 +1,4 @@
-# Log Message Severity
+# Log Severity Levels
 
 Log messages have a severity associated with them which range from the most
 verbose `TRACE` messages to the most urgent `ERROR` and `FATAL` messages.

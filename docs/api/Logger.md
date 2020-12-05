@@ -1,26 +1,34 @@
 
-# Logger
+# Logger Object
 
 The `Logger` object contains the primary interface used to generate log messages.
 On it's own, the `Logger` object doesn't really do anything and requires that one or more `LogTargets` need to be added.
+`Logger` is designed to be a single interface that allows you to interact with multiple `LogTargets`.
 
 Convenience constructors exist that will create `Logger` objects preconfigured with a specific `LogTarget`:
 
-- [NewConsoleLogger](NewConsoleLogger.md)
-- [NewShellLogger](NewShellLogger.md)
-- [NewFileLogger](NewFileLogger.md)
+- [ConsoleLogger](api/ConsoleLogger.md)
+- [ShellLogger](api/ShellLogger.md)
+- [FileLogger](api/FileLogger.md)
 
 
-## Logger Constructor
+### Constructor
 
 The library function `NewLogger` creates a new instance of a `Logger` object.
 
 ```javascript
 const LIB_LOGGER = require( '@liquicode/lib-logger' );
 let logger = LIB_LOGGER.NewLogger( 'Group Name' );
+logger.info( 'Hello, World!' );
 ```
 
-## Logger Fields
+
+### Configuration
+
+Apart from the two fields listed below, there is no need to configure a `Logger` object.
+All configuration is performed on the `LogTargets` added to the `Logger`.
+
+### Fields
 
 - `Group`: The group name provided in the `NewLogger` function.
 	The `Group` field can be output with each log message, providing information on the origin of a log message.
