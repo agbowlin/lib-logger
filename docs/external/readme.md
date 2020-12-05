@@ -1,6 +1,6 @@
 
 
-# lib-logger (v0.2.1)
+# lib-logger (v0.2.2)
 
 An easy and flexible logging system. Log to console, files, etc. Now with colors!
 
