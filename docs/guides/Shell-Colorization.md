@@ -16,7 +16,10 @@ ShellLogTarget.Config.Shell.ErrorColors.Forecolor = LIB_LOGGER.ShellForecolor.Re
 ```
 
 
-## ShellBackcolor Constants
+## Formatting Constants
+
+
+### ShellBackcolor Constants
 
 ```javascript
 const ShellBackcolor =
@@ -41,7 +44,7 @@ const ShellBackcolor =
 };
 ```
 
-## ShellForecolor Constants
+### ShellForecolor Constants
 
 ```javascript
 const ShellForecolor =
@@ -66,7 +69,7 @@ const ShellForecolor =
 };
 ```
 
-## ShellEffect Constants
+### ShellEffect Constants
 
 ```javascript
 const ShellEffect =

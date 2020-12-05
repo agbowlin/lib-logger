@@ -69,7 +69,7 @@ multiple devices.
 const LIB_LOGGER = require( '@liquicode/lib-logger' );
 
 // Call NewShellLogger() to get a logger object that prints message to the console.
-let Logger = LIB_LOGGER.NewShellLogger( 'My Optional Log Group Name' );
+let Logger = LIB_LOGGER.NewShellLogger( 'Test Group' );
 
 // Log something
 Logger.LogInfo( 'Hello, World!' );
@@ -83,7 +83,7 @@ Logger.LogInfo( 'Hello, World!' );
 const LIB_LOGGER = require('bower_components/liqui-logger/js/logger');
 
 // Call NewConsoleLogger() to get a logger object that prints message to the console.
-let Logger = LIB_LOGGER.NewConsoleLogger( 'My Optional Log Group Name' );
+let Logger = LIB_LOGGER.NewConsoleLogger( 'Test Group' );
 
 // Log something
 Logger.LogInfo( 'Hello, World!' );
@@ -95,6 +95,8 @@ Logger.info( 'Hello, Again!' );
 
 
 ## Sample Output
+
+Typical log output, also showing the various parts of a log message:
 
 ```
     group         date         time     ms   severity  message
@@ -114,6 +116,8 @@ Logger.info( 'Hello, Again!' );
 }
 ==========================================      <--- separator line
 ```
+
+Colorized log output using a `ShellLogTarget`:
 
 ![ShellLogTarget colorized output](http://lib-logger.liquicode.com/media/logger-color-output.png)
 

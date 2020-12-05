@@ -2,8 +2,9 @@
 # Logger Object
 
 The `Logger` object contains the primary interface used to generate log messages.
-On it's own, the `Logger` object doesn't really do anything and requires that one or more `LogTargets` need to be added.
+On it's own, the `Logger` object really doesn't do anything and requires a `LogTarget` to be added to it first.
 `Logger` is designed to be a single interface that allows you to interact with multiple `LogTargets`.
+Add `LogTargets` to send log messages to various output devices such as the console or a log file.
 
 Convenience constructors exist that will create `Logger` objects preconfigured with a specific `LogTarget`:
 
