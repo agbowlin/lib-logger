@@ -20,6 +20,7 @@ let NewLogger = require( './Logger.js' ).NewLogger;
 let NewConsoleLogTarget = require( './LogTargets/ConsoleLogTarget.js' ).NewConsoleLogTarget;
 let NewShellLogTarget = require( './LogTargets/ShellLogTarget.js' ).NewShellLogTarget;
 let NewFileLogTarget = require( './LogTargets/FileLogTarget.js' ).NewFileLogTarget;
+let NewRedisLogTarget = require( './LogTargets/RedisLogTarget.js' ).NewRedisLogTarget;
 
 // - Loggers
 let NewConsoleLogger = ( LogLevels ) => NewLogger( NewConsoleLogTarget( LogLevels ) );
@@ -29,6 +30,8 @@ let NewFileLogger = ( LogLevels ) => NewLogger( NewFileLogTarget( LogLevels ) );
 // Shell Colors
 const LIB_SHELL_COLORS = require( './ShellColors.js' );
 
+// Resource Tracker
+const LIB_RESOURCE_TRACKER = require( './ResourceTracker.js' );
 
 
 //=====================================================================
@@ -40,6 +43,7 @@ if ( typeof window !== 'undefined' )
 	window[ 'NewConsoleLogTarget' ] = NewConsoleLogTarget;
 	window[ 'NewShellLogTarget' ] = NewShellLogTarget;
 	window[ 'NewFileLogTarget' ] = NewFileLogTarget;
+	window[ 'NewRedisLogTarget' ] = NewRedisLogTarget;
 	window[ 'NewConsoleLogger' ] = NewConsoleLogger;
 	window[ 'NewShellLogger' ] = NewShellLogger;
 	window[ 'NewFileLogger' ] = NewFileLogger;
@@ -47,6 +51,7 @@ if ( typeof window !== 'undefined' )
 	window[ 'ShellForecolor' ] = LIB_SHELL_COLORS.ShellForecolor;
 	window[ 'ShellEffect' ] = LIB_SHELL_COLORS.ShellEffect;
 	window[ 'ShellText' ] = LIB_SHELL_COLORS.ShellText;
+	window[ 'NewResourceTracker' ] = LIB_RESOURCE_TRACKER.NewResourceTracker;
 }
 
 
@@ -59,6 +64,7 @@ if ( typeof exports !== 'undefined' )
 	exports.NewConsoleLogTarget = NewConsoleLogTarget;
 	exports.NewShellLogTarget = NewShellLogTarget;
 	exports.NewFileLogTarget = NewFileLogTarget;
+	exports.NewRedisLogTarget = NewRedisLogTarget;
 	exports.NewConsoleLogger = NewConsoleLogger;
 	exports.NewShellLogger = NewShellLogger;
 	exports.NewFileLogger = NewFileLogger;
@@ -66,4 +72,5 @@ if ( typeof exports !== 'undefined' )
 	exports.ShellForecolor = LIB_SHELL_COLORS.ShellForecolor;
 	exports.ShellEffect = LIB_SHELL_COLORS.ShellEffect;
 	exports.ShellText = LIB_SHELL_COLORS.ShellText;
+	exports.NewResourceTracker = LIB_RESOURCE_TRACKER.NewResourceTracker;
 }
