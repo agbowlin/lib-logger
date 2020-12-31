@@ -37,7 +37,7 @@ See documentation on the [Logger](api/Logger.md) object for more information.
 
 ### Functions
 
-The `ConsoleLogger` object has the same function as the `Logger` object:
+The `ShellLogger` object has the same function as the `Logger` object:
 
 - AddLogTarget( LogTarget )
 - LogMessageRaw( Message )

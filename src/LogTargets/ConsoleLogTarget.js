@@ -27,7 +27,7 @@ exports.NewConsoleLogTarget =
 		log_target.Config.LogLevels = LogLevels || 'TDIWEF';
 
 		//---------------------------------------------------------------------
-		// ShellLogTarget Config
+		// ConsoleLogTarget Config
 		log_target.Config.Console = {};
 
 
