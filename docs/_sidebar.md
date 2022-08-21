@@ -13,19 +13,19 @@
 
 - Library API
 
-	- Loggers
-
-		- [Logger](api/Logger.md)
-		- [ConsoleLogger](api/ConsoleLogger.md)
-		- [ShellLogger](api/ShellLogger.md)
-		- [FileLogger](api/FileLogger.md)
-
 	- Log Targets
 
 		- [LogTarget](api/LogTarget.md)
 		- [ConsoleLogTarget](api/ConsoleLogTarget.md)
 		- [ShellLogTarget](api/ShellLogTarget.md)
 		- [FileLogTarget](api/FileLogTarget.md)
+
+	- Loggers
+
+		- [Logger](api/Logger.md)
+		- [ConsoleLogger](api/ConsoleLogger.md)
+		- [ShellLogger](api/ShellLogger.md)
+		- [FileLogger](api/FileLogger.md)
 
 	- Other Modules
 
@@ -34,7 +34,7 @@
 
 <hr>
 
-- Previous Library API
+- Previous Versions
 
 	- [Logger 0.1.x](api/Logger.0.1.x.md)
 
